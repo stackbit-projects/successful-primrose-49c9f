@@ -1,0 +1,476 @@
+stackbitVersion: ~0.3.0
+ssgName: hugo
+publishDir: public
+dataDir: data
+pagesDir: content
+assets:
+  referenceType: static
+  staticDir: static
+  uploadDir: assets
+  publicPath: /
+models:
+  academia:
+    type: data
+    label: Academia
+    file: academia.toml
+    fields:
+      - type: string
+        name: version
+        label: Version
+  assets:
+    type: data
+    label: Assets
+    file: assets.toml
+    fields:
+      - type: object
+        name: js
+        label: Js
+        fields:
+          - type: object
+            name: jQuery
+            label: J Query
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: highlight
+            label: Highlight
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: mathJax
+            label: Math Jax
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: isotope
+            label: Isotope
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: imagesLoaded
+            label: Images Loaded
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: autotrack
+            label: Autotrack
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: gmaps
+            label: Gmaps
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: leaflet
+            label: Leaflet
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: fancybox
+            label: Fancybox
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: fuse
+            label: Fuse
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: mark
+            label: Mark
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: instantsearch
+            label: Instantsearch
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: anchor
+            label: Anchor
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: mermaid
+            label: Mermaid
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+      - type: object
+        name: css
+        label: Css
+        fields:
+          - type: object
+            name: fontAwesome
+            label: Font Awesome
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: academicons
+            label: Academicons
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: leaflet
+            label: Leaflet
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: fancybox
+            label: Fancybox
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: instantsearch
+            label: Instantsearch
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: instantsearchTheme
+            label: Instantsearch Theme
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+          - type: object
+            name: highlight
+            label: Highlight
+            fields:
+              - type: string
+                name: version
+                label: Version
+              - type: string
+                name: sri
+                label: Sri
+              - type: string
+                name: url
+                label: Url
+  font:
+    type: data
+    label: Font
+    folder: fonts
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: string
+        name: google_fonts
+        label: Google Fonts
+      - type: string
+        name: heading_font
+        label: Heading Font
+      - type: string
+        name: body_font
+        label: Body Font
+      - type: string
+        name: nav_font
+        label: Nav Font
+      - type: string
+        name: mono_font
+        label: Mono Font
+      - type: string
+        name: font_size
+        label: Font Size
+      - type: string
+        name: font_size_small
+        label: Font Size Small
+  languages:
+    type: data
+    label: Languages
+    file: i18n/languages.yaml
+    fields:
+      - type: string
+        name: ca
+        label: Ca
+      - type: string
+        name: da
+        label: Da
+      - type: string
+        name: de
+        label: De
+      - type: string
+        name: el
+        label: El
+      - type: string
+        name: en
+        label: En
+      - type: string
+        name: es
+        label: Es
+      - type: string
+        name: eu
+        label: Eu
+      - type: string
+        name: fr
+        label: Fr
+      - type: string
+        name: hu
+        label: Hu
+      - type: string
+        name: id
+        label: Id
+      - type: string
+        name: it
+        label: It
+      - type: string
+        name: ja
+        label: Ja
+      - type: string
+        name: ko
+        label: Ko
+      - type: string
+        name: nl
+        label: Nl
+      - type: string
+        name: pl
+        label: Pl
+      - type: string
+        name: pt
+        label: Pt
+      - type: string
+        name: ro
+        label: Ro
+      - type: string
+        name: ru
+        label: Ru
+      - type: string
+        name: tr
+        label: Tr
+      - type: string
+        name: vi
+        label: Vi
+      - type: string
+        name: zh
+        label: Zh
+  page_sharer:
+    type: data
+    label: Page Sharer
+    file: page_sharer.toml
+    fields:
+      - type: list
+        name: buttons
+        label: Buttons
+        items:
+          type: object
+          fields:
+            - type: string
+              name: id
+              label: Id
+            - type: string
+              name: url
+              label: Url
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: icon_pack
+              label: Icon Pack
+            - type: string
+              name: icon
+              label: Icon
+            - type: boolean
+              name: enable
+              label: Enable
+  publication_types:
+    type: data
+    label: Publication Types
+    file: publication_types.toml
+    fields:
+      - type: list
+        name: types
+        label: Types
+        items:
+          type: string
+  theme:
+    type: data
+    label: Theme
+    folder: themes
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: boolean
+        name: light
+        label: Light
+      - type: string
+        name: primary
+        label: Primary
+      - type: string
+        name: menu_primary
+        label: Menu Primary
+      - type: string
+        name: menu_text
+        label: Menu Text
+      - type: string
+        name: menu_text_active
+        label: Menu Text Active
+      - type: string
+        name: menu_title
+        label: Menu Title
+      - type: string
+        name: home_section_odd
+        label: Home Section Odd
+      - type: string
+        name: home_section_even
+        label: Home Section Even
+      - type: string
+        name: background
+        label: Background
